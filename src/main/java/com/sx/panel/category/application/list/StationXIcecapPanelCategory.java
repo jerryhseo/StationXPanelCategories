@@ -1,13 +1,11 @@
-package osp.panel.category.application.list;
-
-import osp.panel.category.constants.StationXPanelCategoryKeys;
+package com.sx.panel.category.application.list;
 
 import com.liferay.application.list.BaseJSPPanelCategory;
-import com.liferay.application.list.BasePanelCategory;
 import com.liferay.application.list.PanelCategory;
 import com.liferay.application.list.constants.PanelCategoryKeys;
 import com.liferay.portal.kernel.language.LanguageUtil;
 import com.liferay.portal.kernel.util.ResourceBundleUtil;
+import com.sx.panel.category.constants.StationXPanelCategoryKeys;
 
 import java.util.Locale;
 import java.util.ResourceBundle;

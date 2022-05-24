@@ -1,13 +1,10 @@
-package osp.panel.category.application.list;
-
-import osp.panel.category.constants.StationXPanelCategoryKeys;
+package com.sx.panel.category.application.list;
 
 import com.liferay.application.list.BaseJSPPanelCategory;
-import com.liferay.application.list.BasePanelCategory;
 import com.liferay.application.list.PanelCategory;
-import com.liferay.application.list.constants.PanelCategoryKeys;
 import com.liferay.portal.kernel.language.LanguageUtil;
 import com.liferay.portal.kernel.util.ResourceBundleUtil;
+import com.sx.panel.category.constants.StationXPanelCategoryKeys;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
@@ -20,16 +17,16 @@ import org.osgi.service.component.annotations.Component;
 @Component(
 	immediate = true,
 	property = {
-		"panel.category.key=" + PanelCategoryKeys.SITE_ADMINISTRATION,
+		"panel.category.key=" + StationXPanelCategoryKeys.ICECAP,
 		"panel.category.order:Integer=100"
 	},
 	service = PanelCategory.class
 )
-public class StationXPanelCategory extends BaseJSPPanelCategory {
+public class StationXIcecapSSSPanelCategory extends BaseJSPPanelCategory {
 
 	@Override
 	public String getKey() {
-		return StationXPanelCategoryKeys.STATION_X;
+		return StationXPanelCategoryKeys.ICECAP_SSS;
 	}
 
 	@Override
@@ -37,7 +34,7 @@ public class StationXPanelCategory extends BaseJSPPanelCategory {
 		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
 			"content.Language", locale, getClass());
 
-		return LanguageUtil.get(resourceBundle, "station.x");
+		return LanguageUtil.get(resourceBundle, "station.x.icecap.sss");
 	}
 
 	@Override

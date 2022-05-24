@@ -1,4 +1,4 @@
-package osp.panel.category.constants;
+package com.sx.panel.category.constants;
 
 /**
  * @author DELL
